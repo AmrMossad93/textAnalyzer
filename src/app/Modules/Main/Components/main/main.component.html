@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <span>{{ appName }}</span>
+  <span class="example-spacer"></span>
+  <form [formGroup]="stateForm">
+    <mat-slide-toggle formControlName="state">{{ state ? 'Online' : 'Offline' }} Mood</mat-slide-toggle>
+  </form>
+</mat-toolbar>
+<router-outlet/>
